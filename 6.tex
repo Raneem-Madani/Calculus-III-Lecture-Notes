@@ -1,0 +1,81 @@
+{\Large\textbf{Symmetry:}}\\
+When we sketch polar curves, it is sometimes helpful to take advantage of symmetry ,The following three rules are explained below : 
+\begin{enumerate}
+    \item If a polar equation is unchanged when $\theta$ is replaced by - $\theta$ , the curve is symmetric about the polar axis .
+    \item If the equation is unchanged when r is replaced by -r , or when $\theta$ is replaced by $\theta+\pi$ the curve is symmetric about the pole.(This means that the curve remains unchanged if we rotate it through $180^0$ about the origion)
+    \item If the equation is unchanged when $\theta$ is replaced by $\pi-\theta$, the curve is symmetric about the vertical line $\theta=\cfrac{\pi}{2}$
+\end{enumerate}
+\begin{minipage}{0.3\textwidth}
+\includegraphics[width=5cm]{f1.PNG}
+\end{minipage}
+\begin{minipage}{.3\textwidth}
+\includegraphics[width=5cm]{f2.PNG}
+\end{minipage}
+\hfill
+\begin{minipage}{.3\textwidth}
+\includegraphics[width=5cm]{f3.PNG}
+\end{minipage}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+$r=cos\theta$ is symmetric  
+\begin{enumerate}
+    \item about the polar axis .
+    \item about the origin .
+    \item about $\theta=\cfrac{\pi}{2}$
+\end{enumerate}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Tangents in polar system $\cfrac{dy}{dx}$ \\
+$x=rsoc\theta \hspace{1cm} y=rsin\theta$ \\
+$\cfrac{dy}{dx}= \cfrac{\cfrac{dy}{d\theta}}{\cfrac{dx}{d\theta}}= \cfrac{\cfrac{dr}{d\theta}*sin\theta+rcos\theta}{\cfrac{dr}{d\theta}*cos\theta-r*sin\theta}$ \\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Let $r=1+sin\theta$
+\begin{enumerate}
+    \item Find the slope at $\theta=\cfrac{\pi}{3}$
+    \item Find where the tangent is horizontal? Vertical ?
+\end{enumerate}
+\text{\color{smalt(darkpowderblue)}\underline{Solution}}: $x=rcos\theta \hspace{1cm}, y=rsin\theta $
+\begin{enumerate}
+    \item$ \cfrac{dy}{dx}=\cfrac{\cfrac{dr}{d\theta}*sin\theta+rcos\theta}{\cfrac{dr}{d\theta}*cos\theta-r*sin\theta} \\ \cfrac{dy}{d\theta}=cos\theta \\ cos\cfrac{\pi}{3}=\cfrac{1}{2} \\ sin\cfrac{\pi}{3}=\cfrac{\sqrt{3}}{2} \\ \Rightarrow \cfrac{dy}{dx}=\cfrac{cos\cfrac{\pi}{3}*sin\cfrac{\pi}{3}+cos\cfrac{\pi}{3}(1+sin\cfrac{\pi}{3})}{cos\cfrac{\pi}{3}*cos\cfrac{\pi}{3}+-(1+sin\cfrac{\pi}{3})*sin\cfrac{\pi}{3}} \\ =\cfrac{\cfrac{\sqrt{3}}{4} + \cfrac{1}{2}+\cfrac{\sqrt{3}}{4}}{\cfrac{1}{4}-\\\cfrac{\sqrt{3}}{2}-\cfrac{3}{4}}=-1 $ \\
+Equation of the tangent: \\ Slope=-1 \\ $x_0=(1+sin\cfrac{\pi}{3}*cos\cfrac{\pi}{3}=(\cfrac{1}{2}+\cfrac{\sqrt{3}}{4}) )\\ 
+y_0=(1+sin\cfrac{\pi}{3}*sin\cfrac{\pi}{3} )=(1+\cfrac{\sqrt{3}}{4})*\cfrac{\sqrt{3}}{2}=\cfrac{\sqrt{3}}{2}+\cfrac{3}{4}$\\
+Equation : $y-\cfrac{\sqrt{3}}{2}+\cfrac{3}{4}=-1(x-(\cfrac{1}{2}+\cfrac{\sqrt{3}}{4}))$\\ 
+\item $\cfrac{dy}{dx} =\cfrac{cos\theta*sin\theta+(1+sin\theta)*cos\theta}{cos\theta*cos\theta-(1+sin\theta)*sin\theta} \\ \cfrac{2*cos\theta*sin\theta+cos\theta}{cos^2\theta-sin^2\theta -sin\theta} = \cfrac{sin2\theta+cos\theta}{cos2\theta-sin\theta} \\ \cfrac{dy}{dx}=0 \Rightarrow 2*cos\theta*sin\theta+cos\theta=0 \Rightarrow cos\theta(2sin\theta+1)=0 \\ \color{red}cos\theta=0 \hspace{1cm}$ or $sin\theta=-\cfrac{1}{2} \\ \theta=\cfrac{\pi}{2},\cfrac{3\pi}{2} \hspace{1cm} \theta=\cfrac{7\\pi}{6},\cfrac{11\pi}{6} \\
+\Rightarrow \cfrac{dx}{d\theta}=0 \Rightarrow cos^2\theta-sin^2\theta-sin\theta=0 \\ 1-sin^2\theta-sin\theta
+-sin\theta=0 \\ (2sin\theta-1)(sin\theta+1)=0 \\ \color{red} sin\theta=\cfrac{1}{2} \hspace{1cm} , sin\theta=-1 \\ \theta=\cfrac{\pi}{6} , \cfrac{5\pi}{6},\cfrac{3\pi}{2}$ \\ 
+H.T $\theta=\cfrac{7\pi}{6}, \cfrac{11\pi}{6}, \cfrac{\pi}{2}$ \\ V.T $\theta=\cfrac{\pi}{6}, \cfrac{5\pi}{6} , \cfrac{3\pi}{2}$ \\ 
+at $\theta=\cfrac{3\pi}{2} \\ \lim_{\theta \to \cfrac{3\pi }{2}+} \cfrac{dy}{dx}=\lim_{\theta \to \cfrac{3\pi}{2}}\cfrac{sin2\theta +cps\theta}{cos2\theta-sin\theta} $ \hspace{2cm} $(\cfrac{0}{0})$ \\ 
+L'Hopital $=\lim_{\theta \to \cfrac{3\pi}{2}+} =\cfrac{2\cos2 \theta-\sin \theta}{2\sin 2\theta - \cos \theta}= -\infty$ 
+\end{enumerate} 
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+1, 3, 7, 8, 9, 11, 13, 15, 16, 17, 19, 21, 24, 25, 29, 30, 31, 34, 37, 39, 40, 42, 43, 47, 57, 58, 61, 63, 65, 67, 70.
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Area and length}
+\begin{minipage}{0.5\textwidth}
+$$A=\cfrac{1}{2}\int_{a}^{b}r^2 d\theta$$
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{f4.jpg}
+\end{minipage}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Find the area of one leaf of the rose $r=\cos2\theta$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}
+\begin{minipage}{0.5\textwidth}
+  $$A=2*\cfrac{1}{2} *\int_{0}^{\cfrac{\pi}{4}} (\cos 2\theta)^2 d\theta$$
+  $$A= \int_{0}^{\cfrac{\pi}{2}}(\cfrac{1}{2}+\cfrac{1}{2}*\cos 4\theta )d\theta$$
+  $$A=\cfrac{\theta}{2}+\cfrac{1}{8}\sin 4\theta |_{0}^{\cfrac{\pi}{2}}$$
+  $$A=\cfrac{\pi}{4}$$ 
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=5cm]{f5.jpg}
+\end{minipage}
+\end{example}

@@ -1,0 +1,115 @@
+\begin{example}
+Find $x$ such that the angle between $<2,1,-1>$, $<1,x,0>$ is $45^\circ$ \\
+$\cos{45^\circ}=\cfrac{2+x-0}{\sqrt{6}\sqrt{1+x^2}}$~~~~~~
+$|\cos{\theta}=\cfrac{\overrightarrow{a}.\overrightarrow{b}}{|\overrightarrow{a}||\overrightarrow{b}|}$\\
+$\Leftrightarrow\cfrac{\sqrt{6}}{\sqrt{2}}\sqrt{1+x^2}=2+x$\\
+$\Rightarrow3(1+x^2)=(2+x)^2$\\
+$3+3x^2-4x-1=0$\\
+$x=\cfrac{-b\pm\sqrt{b^2-4ac}}{2a}$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Find the two unit vectors that make an angle $60^\circ$ with $\overrightarrow{v}=<3,4>.$\\
+\noindent\begin{minipage}{0.5\textwidth}
+$\overrightarrow{u}=<a,b>$\\
+$a^2+b^2=1\cdots(1)$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+$\cos{60}=\cfrac{\overrightarrow{u}.\overrightarrow{v}}{|\overrightarrow{u}|.|\overrightarrow{v}|}$\\
+$\frac{1}{2}=\cfrac{3a+4b}{1.5}$\\
+$3a+4b=\cfrac{5}{2}\cdots(2)$\\
+\end{minipage}\\
+\noindent\begin{minipage}{0.7\textwidth}
+\includegraphics[width=7cm]{1w.jpg}\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+$\theta^\circ=\tan\cfrac{4}{3}=x_\circ$\\
+\end{minipage}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+53: the distance between the fine $ax+by+c=0$ and the point $(x_1,y_1)$ is\\
+\noindent\begin{minipage}{0.5\textwidth}
+$D=\cfrac{|ax_1+by_1+c|}{\sqrt{a^2+b^2}}$
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{2w.jpg}
+\end{minipage}
+{\color{smalt(darkpowderblue)}Question:} Find the distance between $(-1,3)\&$ the line $3x-4y+5=0$
+$$D=\cfrac{3(-2)-4(3)+5}{\sqrt{3^2+4^2}}=\cfrac{13}{5}$$
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $\overrightarrow{c}=|\overrightarrow{a}|\overrightarrow{b}+|\overrightarrow{b}|\overrightarrow{a},~\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}$ not zero vectors\\
+Show that $\overrightarrow{0}$ bisects $\overrightarrow{a}\&\overrightarrow{b}$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}} \\
+\noindent\begin{minipage}{0.7\textwidth}
+$\cos{\alpha}=\cfrac{\overrightarrow{a}.\overrightarrow{c}}{|\overrightarrow{a}||\overrightarrow{c}|}=\cfrac{\overrightarrow{a}.[|\overrightarrow{a}|\overrightarrow{b}+|\overrightarrow{b}\overrightarrow{a}}{|\overrightarrow{a}||\overrightarrow{c}|}$\\
+$=\cfrac{\overrightarrow{a}.\overrightarrow{b}+|\overrightarrow{a}||\overrightarrow{b}|}{|\overrightarrow{c}|}$\\
+\end{minipage}
+\noindent\begin{minipage}{0.3\textwidth}
+\includegraphics[width=5cm]{3w.jpg}
+\end{minipage}\\
+$\cos\beta=\cfrac{\overrightarrow{b}.\overrightarrow{c}}{|\overrightarrow{b}||\overrightarrow{c}|}=\cfrac{\overrightarrow{b.}[|\overrightarrow{a}|\overrightarrow{b}+|\overrightarrow{b}|\overrightarrow{a}}{|\overrightarrow{b}||\overrightarrow{c}|}$\\
+$=\cfrac{\overrightarrow{a}.\overrightarrow{b}+|\overrightarrow{a}||\overrightarrow{b}|}{|\overrightarrow{c}|}$\\
+$\Rightarrow\alpha=\beta$
+\end{example}
+\begin{exercise}
+Show that $proj_{\overrightarrow{b}}^{\overrightarrow{a}}.proj_{\overrightarrow{a}}^{\overrightarrow{b}}=(\overrightarrow{a}.\overrightarrow{b})\cos^2\theta$
+\end{exercise}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+1,3,7,9,10,11,15,19,20,21,23,25,26,27,31,35,39,43,45,49,54,59
+\end{problem}
+\section{The Cross Product}
+\begin{definition}
+if $\overrightarrow{a}=<a_1,a_2,a_3>,~\overrightarrow{b}=<b_1,b_2,b_3>$ then the cross product of $\overrightarrow{a}\&\overrightarrow{b}$ is:
+$$\overrightarrow{a}\times\overrightarrow{b}=\begin{vmatrix}
+i&j&k\\
+a_1&a_2&a_3\\
+b_1&b_2&b_3
+\end{vmatrix}$$
+$$=\begin{vmatrix}
+a_2&a_3\\
+b_2&b_3
+\end{vmatrix}i-
+\begin{vmatrix}
+a_1&a_3\\
+b_1&b_3
+\end{vmatrix}j+
+\begin{vmatrix}
+a_1&a_2\\
+b_1&b_2
+\end{vmatrix}k$$
+$$=<a_2b_3-a_3b_2,-(a_1b_3-a_3b_1),a_1b_2-a_2b_1>$$
+\end{definition} 
+\begin{example}
+If $\overrightarrow{a}=<1,2,-1>,~\overrightarrow{b}=<2,2,-3>$ Find $\overrightarrow{a}\times\overrightarrow{b}$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+$\overrightarrow{a}\times\overrightarrow{b}=\begin{vmatrix}
+i&j&k\\
+1&2&-1\\
+2&2&-3
+\end{vmatrix}=(-4)i+1(j)+(-2)k=<-4,1,-2>.$
+\end{example}
+\begin{theorem}
+$\overrightarrow{a}\times\overrightarrow{b}\bot\overrightarrow{a}~\&~\overrightarrow{a}\times\overrightarrow{b}\bot\overrightarrow{b}$\\
+\end{theorem}
+{\color{smalt(darkpowderblue)}\textbf{proof:}}
+$(\overrightarrow{a}\times\overrightarrow{b}).\overrightarrow{a}=<a_2b_3-a_3b_2,-a_1b_3+a_3b_1,a_1b_2-a_2b_2>.<a_1,a_2,a_3>$\\
+$=a_1a_2b_3-a_1a_3b_2-a_2a_3b_1+a_1a_3b_2-a_2a_3b_2=Zero$\\
+$\Rightarrow(\overrightarrow{a}\times\overrightarrow{b}\bot\overrightarrow{a}).$
+\begin{theorem}
+$|\overrightarrow{a}\times\overrightarrow{b}|=|\overrightarrow{a}||\overrightarrow{b}|\sin{\theta}.~~~~0\leq\theta\leq180^\circ$\\
+\end{theorem}
+{\color{smalt(darkpowderblue)}\textbf{proof:}}
+$|\overrightarrow{a}\times\overrightarrow{b}|^2=(a_2b_3-a_3b_2)^2+(a_1b_3-a_3b_1)^2+(a_1b_2-a_2b_1)^2$\\
+$=a_2^2b_3^2+a_3^2b_2^2-2a_2a_3b_2b_3+a_1^2b_3^2+a_3^2b_1^2-2a_1a_3b_1b_3+a_1^2b_2^2+a_2^2b_1^2-2a_1a_2b_1b_2$\\
+$=(a_1^2+a_2^2+a_3^2)(b_1^2+b_2^2+b_3^2)-(a_1b_1+a_2b_2+a_3b_3)^2$\\
+$=|\overrightarrow{a}|^2|\overrightarrow{b}|^2-(\overrightarrow{a}\overrightarrow{b})^2$\\
+$=|\overrightarrow{a}|^2|\overrightarrow{b}|^2-|\overrightarrow{a}|^2|\overrightarrow{b}|^2\cos\theta^2$\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+{\color{smalt(darkpowderblue)}\textbf{Corollary:}}
+if $\overrightarrow{a},\overrightarrow{b}$ non-zero vectors, then\\
+$\overrightarrow{a}\parallel\overrightarrow{b}\iff \overrightarrow{a}\times\overrightarrow{b}=\overrightarrow{0}\iff |\overrightarrow{a}\times\overrightarrow{b}|=0\iff\overrightarrow{a}=c\overrightarrow{b}$ for some $c$\\
+\begin{center}
+    \includegraphics[width=4cm]{4w.jpg}
+\end{center}

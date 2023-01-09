@@ -1,0 +1,161 @@
+\begin{definition}
+Differentials: if $ z=f(x,y) $, then we define the differential \\
+$dz=f_x \partial x + f_y \partial y $\\
+$dz=\cfrac{\partial f}{\partial x} \partial x+\cfrac{\partial f} {\partial y }\partial y$\\
+let:\\
+$\partial x = \delta x = x-a $\\
+$ \partial y = \Delta y = y-a $\\
+$ \partial z =\delta z = z - z_\circ = f(x,y) - f(a,b)$\\
+$ dz = \cfrac{\partial f} {\partial x}\mid_{(a,b)} (x-a) + \cfrac{\partial f}{\partial y}\mid_{(a,b)}(y-b)$
+\end{definition}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%-------------------------------------------------------
+\begin{example}
+let $t=f(x,y)=x^{2}+3xy-y^{2}$
+\begin{enumerate}
+    \item find the differential\\
+    $\partial t = (2x + 3y) \partial x + (3x - 2y) \partial y$\\
+    \item if x change from 2 to 2.05\\
+    y change from 3 to 2.96 \\
+    com pane $\partial z , \delta z$
+\end{enumerate}
+$\partial z = (2(2) + 3(3)) \cfrac{5}{100} + (3.2.2.3)\cfrac{-4}{100}$\\
+$=\cfrac{65}{100} = 0.65 $\\
+$(2,3)\rightarrow (2.05,2.96)$\\
+$\Delta z = f((2.05,2.96)-f(2,3)) = 0.6449 $\\
+$dz = \delta z = z - z_\circ$\\
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%-------------------------------------------------
+functions of three variables\\
+$w = f (x,y,z) $\\
+$\partial w = f_x \partial x + f_y \partial y + f_z \partial z $\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%----------------------------------------------------
+\begin{problem}
+1-43(odd),44,48,49,50,51,53,59,61,65,71,72(a,d),73,75,77,87*,89*,93,94
+\end{problem}
+\section{Directional derivatives and Gradient vector}
+$f_x=\lim_{h\to0} \cfrac{f(x+h,y)-f(x,y) }{h}$\\
+$f_y = \lim_{h \to 0} \cfrac{f(x,y+h) - f(x,y)}{h}$\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+
+\begin{definition}
+the direction derivative of f at $(x_\circ , y_\circ)$ in the direction of the limit vector ${\overrightarrow{u}} = <a,b> is D_{\overrightarrow{u}} f(x_\circ,y_\circ)=\lim\cfrac{f(x+a h,y+b h) - f(x,y)}{h}$
+\end{definition} 
+
+Gradient vector:\\
+\begin{definition}
+if $z = f(x,y) , then the gradient of f at (x_\circ,y_\circ) is \nabla f = < f_x (x_\circ ,y_\circ),f_y(x_\circ , y_\circ)>$
+\end{definition}
+%------------------------------------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $ f(x,y) = x^{2} - y^{2} find \nabla f\mid_(1,2)$\\
+$f_x = 2x \rightarrow f_x(1,2) = 2 $\\
+$f_y = 2y \rightarrow f_y(1,2) = -4$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\,$\nabla f\mid_(1,2) = <2,-4>$
+\end{example}
+
+%----------------------------------------------------
+\begin{theorem}
+ $D_{\overrightarrow{u}} f(x_\circ,y_\circ) = \nabla f .{\overrightarrow{u}}$
+\end{theorem}
+%-----------------------------------------------------
+\begin{example}
+if $f(x,y) = sin x + e ^{xy}$ find the directional of f at (0,1) in the direction of ${\overrightarrow{u}} = <3,-4>$\\
+so, $D_{\overrightarrow{u}} f(0,1)= \nabla f .{\overrightarrow{u}}$\\
+$=<2,0> . <\cfrac{3}{5},\cfrac{4}{5}>\\
+=\cfrac{6}{10} + 0\cfrac{4}{5} = (0,6)$\\
+$\nabla f = <f_x,f_y> . <2,0>\\
+f_x = cos x + y e^{xy} \\
+f_y = x e^{xy} \\
+f_x(0,1) = 2\\
+f_y(0,1) = 0 $\\
+function of three variables $w = f(x,y,z)$\\
+$\nabla f = ,f_x,f_y,f_z>$\\
+$D_{\overrightarrow{u}} f(a,b,c) = \nabla f . {\overrightarrow{u}}$\\
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%----------------------------------------------------------------------
+\begin{example}
+find the direction derivative of $f(x,y,z) = \cfrac{x - y}{z} + x^{2} + e^{y}$\\
+at $p(1,0,1) in the directional to the point Q (-1,2,0)$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\ $D_{\overrightarrow{u}} f(-1,2,0) = \nabla f . {\overrightarrow{u}} = <3,0,-1>.<\cfrac{2}{3},\cfrac{2}{3},\cfrac{-1}{3}> = -2 + 0 + \cfrac{1}{3} = -1\cfrac{2}{3}$\\
+${\overrightarrow{u}} = \cfrac{{\overrightarrow{PQ}}}{|{\overrightarrow{PQ}}|} = <\cfrac{-2}{3} , \cfrac{2}{3} , \cfrac{-1}{0}>$\\
+$f_x = \cfrac{1}{z} + 2x , f_x(1,0,1) = 1+2 = 3$\\
+$f_y = \cfrac{-1}{z} + e^{y} \rightarrow f_y(91,0,1) = -1 +1 = 0 $\\
+$f_y = \cfrac{y-x}{z^{2}} , f_y(1,0,1) = \cfrac{0-1}{1^{2}} = -1 $\\
+$\nabla f = <3,0,-1>$\\
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%------------------------------------------------------
+\begin{example}
+if $D_{\overrightarrow{u}} f = 3    \nabla 2f .{\overrightarrow{u}}$\\
+if $D_{\overrightarrow{u}} 2f = 6$\\
+$D_{\overrightarrow{u}} -2f = -6$\\
+$D_{\overrightarrow{2u}} f = 3$\\
+$D_{\overrightarrow{-2u}} f = -3 $
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+Question $z = f(x,y)(x_\circ , y_\circ)$\\
+${\overrightarrow{u}} = ??$\\
+find ${\overrightarrow{u}}$ that maximize $D_{\overrightarrow{u}} f(x_\circ , y_\circ )= \nabla f .{\overrightarrow{u}} = |\nabla f| |{\overrightarrow{u}}| cos$\\
+
+
+\begin{theorem}
+ \begin{enumerate}
+    \item the max directional derivative of f at $(x_\circ , y_\circ) is |\nabla f|$ and it accrues if${\overrightarrow{u}}$ has the same direction of $\nabla f$ .
+    \item the min directional derivative of f is $-|\nabla f | $ and it accrues if${\overrightarrow{u}}$ has the opposite direction of $\nabla f$.
+\end{enumerate}
+\end{theorem}
+
+\begin{example}
+Let $z = f(x.y) = xe^{y}$ find the max directional derivative at (2,0).\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+$\nabla f = <f_x ,f_y> , f_x = e^{y} f_x(2,0) = 1 , f_y = xe^{y} f_y (2,0) = 2$\\
+$\nabla f = <1,2>$\\
+$max D_{\overrightarrow{u}} f(2,0) = |\nabla f| = \surd 5$\\
+it occurs if ${\overrightarrow{u}}$ has the same direction of $<1,2>$\\
+max directional derivative $\leftrightarrow$ max rate of change \\
+                           $\leftrightarrow$ increasing most rapidly \\
+min directional derivative $\leftrightarrow$ min rate of change\\
+                           $\leftrightarrow$ decreasing most rapidly
+
+\end{example} 
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%===================================================
+\underline{\color{smalt(darkpowderblue)}Tangent plane for level surfaces}\\
+\noindent\begin{minipage}{0.5\textwidth}
+$k = f(x,y,z)$ level surfaces\\
+to find the plane we need 
+    1.point $(x_\circ , y_\circ , z_\circ)$
+    2.${\overrightarrow{n}} = \nabla f$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=5cm]{rr1.png}\\
+\end{center}\end{minipage}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+
+\begin{example}
+\begin{enumerate}
+    \item find the equation of the tangent plane to $\cfrac{x^{2}}{4} + y^{2} + \cfrac{z^{2}}{9} = 3 at (2,1,3)$
+    \item find the equation of the normal liner
+\end{enumerate}
+
+{\color{smalt(darkpowderblue)}\underline{Solution:}}
+\begin{enumerate}
+    \item plane ! point (2,1.3) \\
+${\overrightarrow{n}} = \nabla f = <\cfrac{2x}{4},2y,\cfrac{2}{9} = <1,2,\cfrac{2}{3}$ \\
+$|(x-2) + 2(y-1) + \cfrac{2}{3} (z-3)|$
+\item point (2,1,3)\\
+${\overrightarrow{n}} = <1,2,\cfrac{2}{3}> , x=2+t \\
+                                          , y=1+2t\\
+                                          , z=3+\cfrac{2}{3}t $\\
+$\nabla f = <f_x,f_y,f_z>$\\
+$D_{\overrightarrow{u}} f(x_\circ , y_\circ , z_\circ) = \nabla f .{\overrightarrow{u}}$\\
+max $D_{\overrightarrow{u}} f = |\nabla f|$ it accrues if $\nabla f ,{\overrightarrow{u}}$ have the same direction \\
+F(x,y,z) = K the n the normal to the tangent $D_{\overrightarrow{n}} f = |\nabla f|$ 
+\end{enumerate}
+\end{example}

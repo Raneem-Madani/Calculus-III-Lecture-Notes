@@ -1,0 +1,127 @@
+\section*{3D Coordinate System}
+\begin{center}
+    \includegraphics[width=5cm]{1d.png}\\
+{\large\color{smalt(darkpowderblue)} $R^3~,V_3$}
+\end{center}
+\begin{itemize}
+    \item $(x_1,y_1,z_1)~,~(x_2,y_2~,~z_2)$, Distance:\\
+    $D=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$
+    \item $(h,k,l)~,r$
+    $$(x-h)^2+(y-k)^2+(z-l)^2=r^2$$
+    $$Sphere~center~(h,k,l)$$
+    $$radius~r$$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Describe the region represented by: $1\leq x^2+y^2+z^2\leq 4$\\
+{\color{smalt(darkpowderblue)}\underline{Solution}}\\
+The equation represented the region between:\\
+The sphere of center (0,0,0), radios 2\\
+and the sphere of center (0,0,0), radios 1
+\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Find an equation of the largest sphere of center (5,4,9) in the first octant.\\
+{\color{smalt(darkpowderblue)}\underline{Solution}}\\
+\begin{minipage}{0.5\textwidth}
+$$r=4$$
+$$(x-5)^2+(y-4)^2+(z-9)^2=16$$
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{2d.png}
+\end{minipage}
+\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Find the distance between the point (2,3,-4) and :\\
+\begin{minipage}{0.5\textwidth}
+\begin{enumerate}
+    \item the $x-axis$
+    $$d=\sqrt{3^2+4^2}=5$$
+    \item the $xz-plane$
+    $$d=3$$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{3d.png}
+\end{minipage}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%5
+\begin{problem}
+2,3,7,9,10,11,13,14,15,17,19,20,21,23,25,29,32,33,35,38
+\end{problem}
+\section{Vectors}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{4d.jpg}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+$$\overrightarrow{v}=\overrightarrow{PQ}=<x_2-x_1,y_2-y_1>$$
+\end{minipage}
+in $2D~\overrightarrow{a}=<x,y>$\hfill $|\overrightarrow{a}|=\sqrt{x^2+y^2}$\\
+in $3D~\overrightarrow{a}=<x,y,z>$\hfill $|\overrightarrow{a}|=\sqrt{x^2+y^2+z^2}$\\
+if $\overrightarrow{a}=<a_1,a_2,a_3,~\overrightarrow{b}=<b_1,b_2,b_3>\Rightarrow$\\
+$$\overrightarrow{a}+\overrightarrow{b}=<a_1+b_1,a_2+b_2,a_3+b_3>$$
+$$c\overrightarrow{a}=<ca_1,ca_2,ca_3>$$
+$\overrightarrow{a}=<a_1,a_2,a_3>=a_1\underbrace{<1,0,0>}+a_2\underbrace{<0,1,0>}+a_3\underbrace{<0,0,1>}$\\
+\hspace*{5.5cm} {\color{red}$i\hspace{3cm}j\hspace{3cm}k$}
+$$=a_1 i+a_2 j+a_3k$$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{definition}[Unit vector:]
+ a vector $\overrightarrow{u}$ is called a unit if $|\overrightarrow{u}|=1$
+\end{definition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Find a unit vector in the opposite direction of $\overrightarrow{v}=<2,-2,1>.$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}} 
+$|\overrightarrow{u}|=\cfrac{\overrightarrow{v}}{|\overrightarrow{v}|}=\cfrac{-1}{\sqrt{4+4+1}}<2,-2,1>=<\cfrac{-2}{3},\cfrac{2}{3},\cfrac{-1}{3}>$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+7,11,13,15,17,19,21,23,24,25,37,41,42
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Dot Product}
+\begin{definition}
+if $\overrightarrow{a}=<a_1,a_2,a_3>~,~\overrightarrow{b}=<b_1,b_2,b_3>\Rightarrow$
+$$\overrightarrow{a}.\overrightarrow{b}=a_1b_1+a_2b_2+a_3b_3$$
+\end{definition} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+if $\overrightarrow{a}=<2,1,-2>~,~\overrightarrow{b}=<1,1,3>$\\
+{\color{smalt(darkpowderblue)}\underline{Solution}}\\
+$\overrightarrow{a}.\overrightarrow{b}=2+1-6=-3$\\
+$\overrightarrow{a}.\overrightarrow{a}=a_1^2+a_2^2+a_3^2=(\sqrt{a_1^2+a_2^2+a_3^2})^2=|\overrightarrow{a}|^2$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\color{smalt(darkpowderblue)}Properties:}
+\begin{enumerate}
+    \item $\vv{a}.\vv{b}=\vv{b}.\vv{a}$
+    \item $\vv{a}.\vv{a}=|\vv{a}|^2$
+    \item $\vv{a}.(\vv{b}+\vv{c})=\vv{a}.\vv{b}+\vv{a}.\vv{c}$
+    \item $(c\vv{a}).\vv{b}=\vv{a}.(c\vv{b})=c(\vv{a}.\vv{b})$
+    \item $\vv{0}.\vv{a}=0$
+\end{enumerate}
+\begin{theorem}
+if $\theta$ is the angle between $\vv{a}~\&~\vv{b}$ then $\vv{a}.\vv{b}=|\vv{a}||\vv{b}|\cos\theta\\
+\theta\in[0,\pi]$
+\end{theorem}
+{\color{smalt(darkpowderblue)}Corollary 1:}
+$\cos{\theta}=\cfrac{\vv{a}.\vv{b}}{|\vv{a}||\vv{b}|}$ $|\vv{a}|\neq0~,~|\vv{b}|\neq0$\\
+\begin{example}
+Find the angle between $\vv{a}=<2,2,-1>~,~\vv{b}=<5,-3,-2>$\\
+$\cos{\theta}=\cfrac{\vv{a}.\vv{b}}{|\vv{a}||\vv{b}|}=\cfrac{10-6-2}{3\sqrt{25+9+4}}=\cfrac{2}{3\sqrt{38}}$\\
+$g=cos^{-1}(\cfrac{2}{3\sqrt{38}}\approx 1.46(84)^\circ$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+{\color{smalt(darkpowderblue)}Corollary 2:} Two non-zero vectors are orthogonal iff $\vv{a}.\vv{b}=0$
+\begin{example}
+if $\vv{a}=<2,1,-2>~,~\vv{b}=<c,2,1>$\\
+Find $c$ such that $\vv{a}\bot\vv{b}=0$\\
+$\vv{a}.\vv{b}=0\Leftrightarrow 2c+2-2=0\Leftrightarrow c=0$
+\end{example}

@@ -1,0 +1,78 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-----------------------
+\underline{\large\textbf{\color{smalt(darkpowderblue)}{Cycloid}}}
+\noindent\begin{minipage}{0.3\textwidth}
+\includegraphics[width=4cm]{h5.jpg}
+\end{minipage}
+\noindent\begin{minipage}{0.3\textwidth}
+\includegraphics[width=4cm]{h4.jpg}
+\end{minipage}
+\noindent\begin{minipage}{0.3\textwidth}
+\includegraphics[width=4cm]{h6.jpg}
+\end{minipage}\\
+\hspace*{1.8cm}$$\underbrace{x=r(\theta-sin\theta)~~y=r(1-cos\theta)}~ ~0 \leq \theta \leq 2*\pi$$
+$$Cycloid$$\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}
+1, 3, 4, 7, 8, 10, 12, 15, 16, 25, 26, 37.
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-
+\section{Calculus with Parametric Equations.}
+let $x=f(t) , y=g(t)$   Then \\ $$\cfrac{dy}{dx}=\cfrac{\cfrac{d(y)}{d(t)}}{\cfrac{d(x)}{d(t)}}=\cfrac{g'(t)}{f'(t)}\hspace{.5cm} ,f'(t)\neq 0$$
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+if $x=cost , y=sint$\hspace{1cm}\\
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution} \\
+$$\cfrac{dy}{dx}=-\cfrac{cost}{sint}=-cott$$
+  \begin{equation}
+\begin{split} \cfrac{d^2y}{dx^2} &=\cfrac{d}{dx} \cfrac{dy}{dx} = \cfrac{\cfrac{d}{dt}\cfrac{dy}{dx}}{\cfrac{dx}{dt}} \\
+&= \cfrac{csc^2t}{-sint} \\
+&= -csc^3t
+\end{split}
+\end{equation}
+\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $x=t^3 , y=3t$, Find $\cfrac{d^2y}{dx^2}$\\
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution} \\
+\noindent\begin{minipage}{0.3\textwidth}
+$$\cfrac{dy}{dx}=\cfrac{3}{3t^2}=t^{-2}$$
+$$\cfrac{d^2y}{dx^2}=\cfrac{\cfrac{d}{dt}\cfrac{dy}{dx}}{\cfrac{dx}{dt}}$$ 
+$$\cfrac{-2t^{-3}}{3t^2} = \cfrac{-2}{3}t^{-5}$$
+$$\cfrac{d^2y}{dx^2}=\cfrac{-2}{3}x^\frac{-5}{3}$$
+\end{minipage}
+\noindent\begin{minipage}{0.6\textwidth}
+$$y=3x^\frac{1}{3}$$
+$$\cfrac{dy}{dx}=x^\frac{-2}{3}$$
+\color{smalt(darkpowderblue)}{$$\cfrac{d^2y}{dx^2}=\cfrac{-2}{3}x^\frac{-5}{3}$$}
+$\swarrow$
+\end{minipage}
+\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-
+\begin{exercise}
+if $y=cost+t ,\\ x=1-t+t^2$ \hspace{5mm}~Find $\cfrac{d^2y}{dx^2}$ 
+\end{exercise}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Consider the parametric equations : $x=t^2 , y=t^3-3t$
+\begin{enumerate}
+    \item[(a)] Show that hte curve has two tangents at (3,0) ,Find the tangent line
+    \item[(b)]Find where the tangent is horizontal ? Vertical ?
+    \item[(c)]Find where the curve is concave up? down ?
+    \item[(d)]Sketch the curve .
+\end{enumerate}
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution} \\
+(a)~$(3,0) \Rightarrow ~x=3 ~, y=0$\\$t^2=3 \hspace{3cm} t^3-3t=0$ $\\ \downarrow \hspace{4cm} \downarrow \\ t=\sqrt{3} , -\sqrt{3} \hspace{2cm} t=0 ,\sqrt{3} , -\sqrt{3} $ \hspace{1cm} {\color{red}Refuse t=0} \\
+The curve passes the point (3,0) two times at $t=\sqrt{3} , -\sqrt{3} $ \\ 
+$\cfrac{dy}{dx}=\cfrac{\cfrac{dy}{dt}}{\cfrac{dx}{dt}} = \cfrac{3t^-3}{2t}$ \\ 
+at $t=\sqrt{3}\Rightarrow \cfrac{dy}{dx}=\cfrac{3\sqrt{3}^2-3}{2\sqrt{3}}=\cfrac{3}{\sqrt{3}}=\sqrt{3}$\\
+at $t=-\sqrt{3}\Rightarrow \cfrac{dy}{dx}=\cfrac{3*3-3}{-2\sqrt{3}}=-\sqrt{3}$ \\
+So equation (1) \\
+$y-0=\sqrt{3}(x-3)$\\
+And equation (2) \\
+$y-0=-\sqrt{3}(x-3)$\\
+\end{example}
+
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}

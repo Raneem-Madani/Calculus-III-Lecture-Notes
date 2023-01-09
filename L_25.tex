@@ -1,0 +1,124 @@
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+1,3,5,6,11,13,15,17,19,21,25,30,31,33,35,36,37
+\end{problem}
+\section{The Chain Rule}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=3cm]{case1.png}\\
+\end{center}
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+Case I:\\
+$\cfrac{dz}{dt}=\cfrac{\partial  z}{\partial  x}\cfrac{dx}{dt}+\cfrac{\partial  z}{\partial  y}\cfrac{dy}{dt}$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=5cm]{case2.png}\\
+\end{center}\end{minipage}
+\noindent\begin{minipage}{0.3\textwidth}
+Case II:\\
+$\cfrac{\partial  z}{\partial  t}=\cfrac{\partial  z}{\partial  x}\cfrac{\partial  x}{\partial  t}+\cfrac{\partial  z}{\partial  y}\cfrac{\partial  y}{\partial  t}$\\
+$\cfrac{\partial  t}{\partial s}=\cfrac{\partial z}{\partial x}\cfrac{\partial x}{\partial s}+\cfrac{\partial z}{\partial y}\cfrac{\partial y}{\partial s}$\\
+\end{minipage}
+\\
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=6cm]{case3.png}\\
+\end{center}\end{minipage}
+\noindent\begin{minipage}{0.3\textwidth}
+Case III:\\
+$\cfrac{\partial w}{\partial s}=\cfrac{\partial w}{\partial x}\cfrac{\partial x}{\partial s}+\cfrac{\partial w}{\partial y}\cfrac{\partial y}{\partial s}+\cfrac{\partial w}{\partial z}\cfrac{\partial z}{\partial s}$\\
+\end{minipage}\\
+%-------------------------------------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+If $u=x^4 y+y^2 z^3$\\
+\noindent\begin{minipage}{0.5\textwidth}
+$x=r s e^t$\\
+$y=rs^2 e^{-t}$\\
+$z=r^2 s \sin{t}$\\
+Find $\cfrac{\partial u}{\partial s}$ when $r=2,~s=1,~t=0$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=6cm]{case3.png}\\
+\end{center}\end{minipage}
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+$\cfrac{\partial u}{\partial s}=u_x\cfrac{\partial x}{\partial s}+u_y\cfrac{\partial y}{\partial s}+u_z\cfrac{\partial z}{\partial s}$\\
+$=(4x^3 y)r e^t+(x^4+2y z^3)(2r s e^{-t})+(3y^2t^2)(r^2\sin{t})$\\
+$\cfrac{\partial u}{\partial s}|_{(r,s,t)=(2,1,0)}=(64)2+(16+0)4+0=128+64=192$
+\end{example}
+%-------------------------------------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}.\\
+\noindent\begin{minipage}{0.5\textwidth}
+if $g(s,t)=f(\overset{x}{s^2-t^2},\overset{y}{t^2-s^2})$\\
+show that $g$ satisfies $t\cfrac{\partial g}{\partial s}+s\cfrac{\partial g}{\partial t}=0$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=5cm]{case2.png}\\
+\end{center}\end{minipage}
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+$g(s,t)=f(x,y)$\\
+$\cfrac{\partial g}{\partial s}=\cfrac{\partial g}{\partial x}\cfrac{\partial x}{\partial s}+\cfrac{\partial g}{\partial y}\cfrac{\partial y}{\partial s}$\\
+$\cfrac{\partial g}{\partial s}=f_x(2s)+f_y(-2s)\cdots 1$\\
+$\cfrac{\partial g}{\partial t}=\cfrac{\partial g}{\partial x}\cfrac{\partial x}{\partial t}+\cfrac{\partial g}{\partial y}\cfrac{\partial y}{\partial t}$\\
+$\cfrac{\partial g}{\partial t}=f_x(-2t)+f_y(2t)\cdots 2$\\
+so, $t\cfrac{\partial g}{\partial s}+s\cfrac{\partial g}{\partial t}=f_x(2st)+f_y(-2st)+f_x(-2st)+f_y(2st)=0$\\
+\end{example}
+%--------------------------------------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}.\\
+\noindent\begin{minipage}{0.5\textwidth}
+let $z=f(x,y)$ , $(f$ has cont second partial derivative)\\
+if $x=r^2+s^2$ , $y=2rs$\\
+find:\\
+1. $\cfrac{\partial z}{\partial r}$\\
+2. $\cfrac{\partial^2z}{\partial r^2}$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=5cm]{case22.png}\\
+\end{center}\end{minipage}
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+\noindent\begin{minipage}{0.5\textwidth}
+$\cfrac{\partial z}{\partial r}=f_x\cfrac{\partial x}{\partial r}+f_y\cfrac{\partial y}{\partial r}=f_x(2r)+f_y(2s)$\\
+$=2rf_x+2sf_y$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=3.5cm]{case23.png}\\
+\end{center}\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+$\cfrac{\partial^2 z}{\partial r^2}=2[r(f_{xx}\cfrac{\partial x}{\partial r}+f_{x y}\cfrac{\partial y}{\partial r})+f_x]+2s[f_{y x}\cfrac{\partial x}{\partial r}+f_{y y}\cfrac{\partial y}{\partial r}]$\\
+$=(4r^2)f_{xx}+8rs f_{x y}+4s^2f_{y y}$\\
+\end{minipage}
+\noindent\begin{minipage}{0.5\textwidth}
+\begin{center}
+   \includegraphics[width=3.5cm]{case24.png}\\
+\end{center}\end{minipage}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%-----------------------------------------------------
+\begin{definition}
+Implicit differentiation\\
+if $F(x,y,z)=0$\\
+then $\cfrac{\partial z}{\partial x}=-\cfrac{\cfrac{\partial F}{\partial x}}{\cfrac{\partial F}{\partial z}}$\\
+$\cfrac{\partial z}{\partial y}=-\cfrac{\cfrac{\partial F}{\partial y}}{\cfrac{\partial F}{\partial z}}$
+\end{definition}
+%--------------------------------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $x^3+y^3+z^3=1-6x y z$\\
+Find $\cfrac{\partial z}{\partial x},\cfrac{\partial z}{\partial y}$\\
+{\color{smalt(darkpowderblue)}\underline{Solution:}}\\
+$x^3+y^3+z^3+6xyz-1=0$\\
+$\cfrac{\partial z}{\partial x}=-\cfrac{F_x}{F_z}=-\cfrac{3x^2+6yz}{3z^2+6xy}$\\
+$\cfrac{\partial z}{\partial y}=-\cfrac{F_y}{F_z}=-\cfrac{3y^2+6xz}{3z^2+6xy}$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+3,4,5,7,9,11,12,13,14,15,16,17,19,21,23,26,27,28,31,33,35,39,43,46,48,50,51,58
+\end{problem}

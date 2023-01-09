@@ -1,0 +1,157 @@
+$\overrightarrow{a} \cdot (\overrightarrow{b} \times \overrightarrow{c}) = (\overrightarrow{a} \times \overrightarrow{b}) \cdot \overrightarrow{c} =$ $\begin{vmatrix}
+a_{1} & a_{2} & a_{3} \\
+  b_{1} & b_{2} & b_{3} \\
+  c_{1} & c_{2} & c_{3} 
+ \end{vmatrix}$\\
+ triple product $\overrightarrow{a} \cdot (\overrightarrow{b} \times \overrightarrow{c})$\\
+{\color{smalt(darkpowderblue)}{ volume of the parallelepiped }}:
+$$\overrightarrow{\nu}= \mid \overrightarrow{a} \cdot (\overrightarrow{b} \times \overrightarrow{c}) \mid$$
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+ \begin{example}
+  find the volume of the parallelepiped that determine by \\
+ $\overrightarrow{a} = <1,2,-1>$\\
+ $\overrightarrow{b} = <2,1,1>$\\
+ $\overrightarrow{c} = <3,2,-2>$\\
+ {\color{smalt(darkpowderblue)}{\underline{Solution}}} :
+ \begin{align*}
+      \overrightarrow{\nu}=\mid \overrightarrow{a} \cdot (\overrightarrow{b} \times \overrightarrow{c}) \mid 
+      & = 
+\begin{Vmatrix}
+ 1 & 2 & -1 \\
+ 2 & 1 & 1 \\
+ 3 & 2 & -2 
+ \end{Vmatrix} \\
+ & =\mid 1(-4) -2(-7) + -1(1) \mid \\
+ &= 9 
+ \end{align*}
+if $\overrightarrow{a}\cdot(\overrightarrow{b}\times \overrightarrow{c}) = 0$ then we say that $\overrightarrow{a} , \overrightarrow{b}$ and $\overrightarrow{c}$ are called \textbf{\underline{coplaner}}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%================================================================
+\begin{example}
+ show that the following vectors are coplaner \\
+$\overrightarrow{a} = < 2,1,-1 >$\\
+$\overrightarrow{b} = < -1,3,2 >$\\
+$\overrightarrow{c} = < 0,7,3 >$\\
+ {\color{smalt(darkpowderblue)}{\underline{Solution}}} : 
+ \begin{align*}
+  \overrightarrow{a} \cdot \overrightarrow{b} \times \overrightarrow{c} = &
+ \begin{vmatrix}
+ 2 & 1 & -1 \\
+ -1 & 3 & 2 \\
+ 0 & 7 & 3 
+ \end{vmatrix} \\
+ & =2(-5) -1(-3) + -1(-7) \\
+ & = -10 +3 +7 = 0 
+ \end{align*}
+Thus \textbf{coplaner}
+\end{example}
+%====================================================================
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+1,5,7,9,13,18,19,27,29,31,34,35,38,43
+\end{problem}
+\section{Equation of linear $\&$ planes}
+{\color{smalt(darkpowderblue)}{\underline{ in 3D :}}}\\
+ To determine a line , we need :
+ \begin{enumerate}
+     \item  point $(x_\cdot , y_\cdot , z_\cdot )$
+ \item parallel vector $\overrightarrow{\nu} = <a,b,c>$
+ \end{enumerate}
+ find it is equations ! \\
+ note that $\overrightarrow{\nu} \parallel \overrightarrow{r} $\\
+ $\overrightarrow{\nu} = t\overrightarrow{a} ~, t \in R $\\ {\color{smalt(darkpowderblue)}{vector equation of the line .}}\\
+ $< x-x_0 , y-y_0 , z-z_0 > = < ta , tb ,tc >$\\
+ parametric equations of the line :
+ \begin{itemize}
+     \item $x = x_\cdot + at $
+\item $y = y_\cdot + bt $
+\item $z = z_\cdot + ct $
+ \hspace{1cm} $ -\infty < t < \infty $
+  \end{itemize}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%======================================================================
+ \begin{example}
+ \begin{enumerate}
+     \item  find the parametric equations of the line that passes through the point $(2,1,3) \&$ parallel vector $\overrightarrow{\nu} = <2,1,-1>$ .
+      \item Find the point on the line
+      \item does the point (0,0,5) lie on the line ?
+ \end{enumerate}
+  {\color{smalt(darkpowderblue)}{\underline{Solution}}} : 
+\begin{enumerate}
+    \item $ x = 2 + 2t $\\
+ $ y = 1 + t$\\
+ $ z = 3 - 2t $ \hspace{1cm}
+ $ -\infty < t < \infty$
+ \item $ t = 2 \Rightarrow (6,3,-1) $\\
+ $ t = \cfrac{7}{2} \Rightarrow (9,\cfrac{9}{2} , -4)$
+ \item $ 0 = 2+2t \Rightarrow t =-1 $\\
+ $ 0=1+t \Rightarrow t=-1 $\\
+ $ 5=3-2t \Rightarrow t=-1 $ \hspace{1cm} {\color{smalt(darkpowderblue)}{yes}}.
+\end{enumerate}
+\end{example} 
+%==============================================================
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{itemize}
+    \item  $ x = x_0 +at \Rightarrow t = \cfrac{x - x_0}{a} \hspace{1cm }a \neq 0 $
+    \item  $ y = y_0 +bt \Rightarrow t = \cfrac{y - y_0}{b} \hspace{1cm }b \neq 0 $
+    \item  $ z = z_0 +ct \Rightarrow t = \cfrac{z - z_0}{c} \hspace{1cm }c \neq 0 $
+\end{itemize}
+ So, if
+ \begin{itemize}
+     \item $ a\neq 0$
+     \item $ b\neq 0$
+     \item $c\neq 0$ 
+ \end{itemize}
+ $$ \Rightarrow
+  \cfrac{x-x_0}{a} = \cfrac{y-y_0}{b} = \cfrac{z-z_0}{c}
+ \hspace{1cm} a\neq 0 ~~ , b\neq 0 ~~ , c\neq 0 $$
+ {\color{smalt(darkpowderblue)}{symmetric equation}}
+ $$\cfrac{x-x_0}{a} = \cfrac{y-y_0}{b} = \cfrac{z-z_0}{c}$$
+ if $a=0$
+ $$ x=x_0 ~~, \cfrac{y-y_0}{b} = \cfrac{z-z_0}{c}$$
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%========================================================================
+\begin{example}
+\begin{enumerate}
+    \item find the equation of the line that passes thorough the point $P(1,2,-1) \& Q(3,1,2)$
+    \item  find where the line intersected the xy-plane !
+\end{enumerate}
+  {\color{smalt(darkpowderblue)}{\underline{Solution}}} : 
+  \begin{enumerate}
+      \item We need 
+  \begin{enumerate}
+      \item point P(1,2,-1)
+      \item $\overrightarrow{\nu} = <2,-1,3>$
+      \end{enumerate}
+
+\textbf{Parametric eq.s}
+$$x = 1+2t$$               
+$$y= 2-t$$
+$$z = -1+3t$$
+\textbf{Symmetric eq.}
+$$\cfrac{x-1}{2} = \cfrac{y-2}{-1} = \cfrac{z+1}{3}$$
+\item  z= 0  
+\begin{itemize}
+    \item $\Rightarrow \cfrac{x-1}{2} = \cfrac{1}{3} \\ \Rightarrow x-1 =\cfrac{2}{3} \\ \Rightarrow x = \cfrac{5}{3}$ 
+    \item $\cfrac{y-2}{-1} = \cfrac{1}{3} \rightarrow y-2 = \cfrac{-1}{3} \rightarrow y=\cfrac{5}{3}$
+    \item $(\cfrac{5}{3} , \cfrac{5}{3} , 0)$
+\end{itemize}
+ \end{enumerate}
+ \end{example}
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%=======================================================================
+\begin{example}
+Find the parametric equations of the line that passes through the point $(-2,1,1)$ \& parallel to the line :\\$L_1 = \cfrac{x-2}{1} = \cfrac{2-y}{1} = \cfrac{2z+1}{1}.$\\
+  {\color{smalt(darkpowderblue)}{\underline{Solution}}}: We need 
+\begin{enumerate}
+    \item  point $(-2,1,1)$
+    \item $\overrightarrow{\nu} = <1,-1,\cfrac{1}{2}>$
+\end{enumerate}
+\begin{align*}
+    &x=2+t \\
+    &y=1-t \\
+    &z=1+\cfrac{1}{2}t \hspace{1cm} t \in R
+\end{align*}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}

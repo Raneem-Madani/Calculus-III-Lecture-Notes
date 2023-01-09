@@ -1,0 +1,91 @@
+{\color{smalt(darkpowderblue)}{\color{smalt(darkpowderblue)}\underline{line}}} 
+\begin{enumerate}
+    \item point $(x_\cdot , y_\cdot , z_\cdot )$
+    \item  parallel vector $\overrightarrow{\nu} = <a,b,c>$
+\end{enumerate}
+{\color{smalt(darkpowderblue)}{\color{smalt(darkpowderblue)}\underline{Parametric equation}}} 
+\begin{itemize}
+    \item $x=x_0 + at$
+    \item $y=y_0 + bt$ 
+    \item $z=z_0 +ct$ \hspace{1cm}$ -\infty < t < \infty $
+\end{itemize}
+{\color{smalt(darkpowderblue)}{\color{smalt(darkpowderblue)}\underline{Symmetric equations}}} 
+\begin{itemize}
+    \item $ \cfrac{x-x_0}{a} = \cfrac{y-y_0}{b} = \cfrac{z-z_0}{c}$
+\end{itemize} 
+\begin{remark}
+  two lines are parallel iff their vector are parallel 
+\end{remark}
+\begin{definition}
+ two lines are called skew if they are not parallel $\&$ they do not intersect .
+\end{definition}
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%=====================================================================
+\begin{example}
+ show that the following lines are skew \\
+$L_1 : x = 1+t , y=-2+3t , z=4-t / \overrightarrow{\nu_{1}} = <1,3,-1> $\\
+$L_2 : x = 2s , y=3+s , z=-3+4s / \overrightarrow{\nu_{2}} = <2,1,4>$\\
+{\color{smalt(darkpowderblue)}\underline{Solution}}\\
+$\nu_{1} \neq \nu_{2} \Rightarrow L_{1} \neq L_{2} \hspace{1cm}(L_{1} \& L_2 $ are not parallel )\\
+$1+t = 2s $ \hspace{4cm} $t-2s=-1 \rightarrow (1) $\\
+$-2+2t = 3+s$ \hspace{3.1cm}$3t-s=5 \rightarrow (2) $\\
+$4-t = -3 +4s $\hspace{3.1cm} $-t -4s=-7 \rightarrow (3)$\\
+{Solve ($1) \& (3$)} \\
+$ 0-6s=-8 \Rightarrow s=\cfrac{8}{6} = \cfrac{4}{3}$\\
+$t=-1+2s \Rightarrow t=-1+\cfrac{8}{3} = \cfrac{5}{3}$\\
+$s=\cfrac{4}{3} ~~, t=\cfrac{5}{3}$\\
+in Equation 2 \\ $ 3\cfrac{5}{3} - \cfrac{4}{3} \neq  5  \Rightarrow 5-\cfrac{4}{3} \neq 5$\\
+$L_{1}~ \& ~ L_2$  do not intersect $\Rightarrow L_{1}\& L_2$ are skew \end{example}
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%========================================================================
+{\color{smalt(darkpowderblue)}\underline{Planes}} : to determine a plane we need \begin{enumerate}
+    \item point $(x_0 , y_0 z_0 )$
+    \item normal vector $\overrightarrow{n} = <a,b,c>$ \hspace{2cm} Note that $\overrightarrow{\nu} \perp \overrightarrow{n}$\\
+$\Rightarrow \overrightarrow{\nu} \cdot \overrightarrow{n} = 0$
+\end{enumerate}
+$\Rightarrow <x-x_0 , y-y_0 , z-z_0> \cdot <a,b,c> = 0$\\
+$\Rightarrow  a(x-x_0) + b(y-y_0) +c(z-z_0) = 0$\\
+$\Rightarrow  ax + by + cz + -(ax_0 + by_0 +cz_0) = 0$\\
+$\Rightarrow  ax + by +cz +d + 0 $\\
+$\Rightarrow  d = -(ax_0 + by_0 + cz_0 )$\\
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+ \begin{enumerate}
+     \item find the equation of the plane that passes through the point $(1,-1,3) \&$  normal vector $\overrightarrow{\nu} = <2,1,-1> .$
+     \item find two points on the plane .
+ \end{enumerate}
+{\color{smalt(darkpowderblue)}\underline{Solution}}
+\begin{enumerate}
+    \item point p(1,-1,3) 
+    \item normal vector $\overrightarrow{\nu} = <2,1,-1> .$\\
+$2(x-1) + 1(y+1) + -1(z-3) = 0 $\\
+$ 2x +y -z +6 = 0$\\
+2) (0,0,6)
+(-3,0,0)
+(0,-6,0) 
+\end{enumerate}
+\end{example} 
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+ find the equation of the plane that passes through the points
+$P(2,1,-2) \hspace{.4cm} Q(1,1,-1)\hspace{.4cm} R(3,-2,1)$ \\
+{\color{smalt(darkpowderblue)}\underline{Solution}}
+\begin{enumerate}
+    \item  Point $(2,1,-2)$
+    \item $\overrightarrow{n} = \overrightarrow{PQ} \times \overrightarrow{PR}$\\
+$=<3,4,3>$\\
+$=3x + 4y  + 3z + -4\\ = 0$\\
+$\overrightarrow{PQ} <-1,0,1>$\\
+$\overrightarrow{PR} = <1,-3,3>$
+\begin{align*}
+\overrightarrow{n} = \overrightarrow{PQ} \times \overrightarrow{PR}
+&=\begin{vmatrix}
+ i & j & k \\
+  -1 & 0 & 1 \\
+  1 & -3 & 3 
+ \end{vmatrix}\\
+ & =<3,4,3>.
+ \end{align*}
+\end{enumerate}
+\end{example}
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}

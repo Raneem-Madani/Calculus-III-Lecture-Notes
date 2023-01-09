@@ -1,0 +1,151 @@
+\textbf{\color{smalt(darkpowderblue)}\large \underline{Area:}}
+If $y=g(t)~,~x=f(t)$\\\\
+\begin{minipage}{0.5\textwidth}
+\begin{itemize}
+    \item Then the area between the curve $C$ and $x-axis$ is 
+    $${\color{smalt(darkpowderblue)}A=\int_a^b g(t)f'(t)dt.}$$
+    \item The area with the $y-axis$ is 
+    $${\color{smalt(darkpowderblue)}A=\int_a^b f(t)g'(t)dt.}$$
+\end{itemize}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=6cm]{1a.jpg}
+\end{minipage}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%
+\begin{example}
+Find the area under one are of cycloid \\
+$x=r(\theta-\sin\theta)~,~y=r(1-\cos\theta)$\\
+\underline{\color{smalt(darkpowderblue)}Solution}\\
+\begin{minipage}{0.6\textwidth}
+$$A=\int_0^{2\pi}g(\theta)f'(\theta)d\theta=\int_0^{2\pi}r^2(1-\cos\theta)^2d\theta$$
+$$=r^2\int_0^{2\theta}1-2\cos\theta+\cos^2\theta d\theta$$
+$$=r^2\int_0^{2\theta}1-2\cos\theta+\cfrac{1}{2}+\cfrac{1}{2}cos2\theta d\theta$$
+$$r^2[\theta-2\sin\theta+\cfrac{\theta}{2}+\cfrac{1}{4}\sin2\theta]|_0^{2\pi}=\boxed{3\pi r^2}$$
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=5cm]{2a.jpg}\\
+$\boxed{f'(\theta)=r(1-\cos\theta)}$
+\end{minipage}
+\end{example}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
+\begin{exercise}
+Q32~page~637 Find the area enclosed by the curve $x=t^2-2t~,~y=\sqrt{t}$ and the $y-axis$\\
+\underline{\color{smalt(darkpowderblue)}Solution} \\
+\begin{minipage}{0.34\textwidth}
+$$A=\int_0^2 f(t)g'(t)dt$$
+$$=\int_0^2 (t^2-2t)\cfrac{1}{2}t^{-\cfrac{1}{2}}dt$$
+$$\vdots~~\vdots$$
+\end{minipage}
+\begin{minipage}{0.34\textwidth}
+\includegraphics[width=4cm]{3a.jpg}
+\end{minipage}
+\begin{minipage}{0.34\textwidth}
+$$Let~x=0\Rightarrow$$
+$$t^2-2t=0$$
+$$t=0~,~t=2$$
+\end{minipage}
+\end{exercise}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%
+\textbf{\color{smalt(darkpowderblue)}\large \underline{Arc Length:}}
+Let $x=f(t)~,~y=g(t)$
+$$L=\int_a^b\sqrt{f'^2(t)+g'^2(t)}dt$$
+\begin{remark}
+the curve should be traversed once in $a\leq t\leq b$
+\end{remark}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Find the length of $x=\cos\theta~,~y=\sin\theta~,~0\leq\theta\leq 2\pi$\\
+\underline{\color{smalt(darkpowderblue)}Solution} \\
+\begin{minipage}{0.6\textwidth}
+$$L=\int_0^{2\pi}\sqrt{\cos^2\theta+\sin^2\theta}d\theta$$
+$$\int_0^{2\pi}1=2\pi$$
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=4cm]{4a.jpg}
+\end{minipage}
+\end{example}
+%--------------------------------Theorem-----------------------------
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Find the length of one are of the cycloid\\ $x=r(\theta-\sin\theta)~,~y=r(1-\cos\theta)$.\\
+\underline{\color{smalt(darkpowderblue)}Solution} \\
+$$L=\int_0^{2\pi}\sqrt{(\cfrac{dx}{d\theta})^2+(\cfrac{dy}{d\theta})^2}d\theta$$
+$$=\int_0^{2\pi}\sqrt{r^2(1-\cos\theta)^2+r^2(\sin\theta)^2}d\theta$$
+$$=r\int_0^{2\pi}\sqrt{1-2\cos\theta+\cos^2\theta+\sin^2\theta}d\theta$$
+\begin{minipage}{0.5\textwidth}
+$$=r\int_0^{2\pi}\sqrt{2-2cos\theta}d\theta$$
+$$=r\int_0^{2\pi}\sqrt{4\sin^2\cfrac{\theta}{2}}d\theta$$
+$$=2r\int_0^{2\pi}|\sin\cfrac{\theta}{2}|d\theta$$
+$$=2r\int_0^{2\pi}\sin\cfrac{\theta}{2}$$
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+$$2-2\cos\theta$$
+$$=2(1-\cos\theta)$$
+$$=4(\cfrac{1}{2}-\cfrac{1}{2}\cos\theta)$$
+$$=4(\sin^2\cfrac{1}{2}\theta)$$
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+$$2r(2)\cos\cfrac{\theta}{2}|_{2\pi}^0$$
+$$4r(1+1)=8r$$
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=5cm]{2a.jpg}
+\end{minipage}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{\color{smalt(darkpowderblue)}\large \underline{Surfaces Area:}}
+\begin{center}
+    $S=2\pi\int_a^b g(t)\sqrt{f'^2(t)+g'^2(t)}dt~about~the~x-axis$\\
+$about~the~x-axis~=2\pi\int_a^b ydL$\\
+$S=2\pi\int_a^b f(t)\sqrt{f'^2(t)+g'^2(t)}dt~about~the~y-axis$
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{example}
+Find the area of the surface obtained by revolving one arc of the cycloid $x=r(\theta-\sin\theta)~,~y=r(1-\cos\theta)$ about $x-axis$\\
+\underline{\color{smalt(darkpowderblue)}Solution:}\\
+\begin{minipage}{0.6\textwidth}
+\begin{center}
+$S=2\pi\int_0^{2\pi}r(1-\cos\theta\sqrt{2(1-\cos\theta)}d\theta$\\
+$\vdots$    
+\end{center}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=5cm]{5a.jpg}
+\end{minipage}
+\end{example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{example}
+Find the area of a sphere of radius $r$ $\boxed{S=4\pi r^2}$\\
+\underline{\color{smalt(darkpowderblue)}Solution} \\
+\begin{minipage}{0.6\textwidth}
+$$S=2\pi\int_0^\pi r\sin\theta\sqrt{(\cfrac{dx}{d\theta})^2+(\cfrac{dy}{d\theta})^2}d\theta$$
+$$=2\pi r\int_0^\pi\sin\theta\sqrt{r^2}d\theta$$
+$$=2\pi r^2\int_0^\pi\sin\theta d\theta$$
+$$=2\pi r^2\cos\theta|_\pi^0$$
+$$=2\pi r^2(1+1)=4\pi r^2$$
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=4cm]{5a.jpg}\\
+$x=r\cos\theta$\\
+$y=r\sin\theta$\\
+$0\leq\theta\leq\pi$
+\end{minipage}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%
+\begin{problem}
+ 1, 3, 5, 7, 11, 12, 13, 15, 17, 18, 19, 28, 29, 30, 33, 34, 37, 39, 40, 41, 43, 57, 59, 60, 65, 69.
+\end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55%%
+\section{Polar Coordinates.}
+\animategraphics[height = 2.8in , controls]{1}{ani_}{0}{9}
+\animategraphics[height = 2.8in , controls]{1}{anim_}{0}{9}\\
+.\hspace{2cm}{\Large$r=\sin(a\theta)\hspace{5cm}r=\cos(a\theta)$}\\ \\
+\animategraphics[height = 2.8in , controls]{1}{anim1_}{0}{4}
+\animategraphics[height = 2.8in , controls]{1}{anima_}{0}{5}\\
+.\hspace{2cm}{\Large$r=a+b\cos\theta\hspace{5cm}r=a+b\sin\theta$}\\ \\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}

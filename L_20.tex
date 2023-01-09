@@ -1,0 +1,76 @@
+\begin{definition}
+Integrals:
+$\overrightarrow{r}(t)=<f(t),g(t),h(t)>$\\
+then $\int\overrightarrow{r}(t)dt=<\int f(t)dt,\int g(t)dt,\int h(t)dt>$
+\end{definition}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $\overrightarrow{r}(t)=2ti-e^tj+lnt k$\\
+Find $\overrightarrow{r}(t)$ where $\overrightarrow{r}(1)=<0,0,1>$
+$\overrightarrow{r}(t)=<t^2+c_1',-e^t+c_2',tlnt-t+c_3'>$
+$<0,0,1>\overrightarrow{r}(1)=<1+c_1,c_2-e,-1+c_3>$\\
+$1+c_1=0\Rightarrow c_1=-1$\\
+$c_2-e=0\Rightarrow c_2=e$\\
+$-1+c_3=1\Rightarrow c_3=2$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+3,4,5,6,9,11,12,17,19,21,23,25,32,34,37,39,49
+\end{problem}
+\section{Arc Length}
+$L=\int_{a}^{b}\sqrt{f'^2(t)+g'^2(t)+h'^2(t)}dt$\\
+$L=\int_{a}^{b}=|\overrightarrow{r}'(t)|$\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Find the length of the helix $\overrightarrow{r}(t)=<\cos{t},\sin{t},t>~~~~0\leq t\leq\pi$\\
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution}\\
+$L=\int_0^\pi \sqrt{sin^2t+cos^2t+1}=\int_0^\pi \sqrt{2}dt=\pi\sqrt{2}$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Two particles travel along the curves \\
+$\overrightarrow{r}_1(t)=<t,t^2,t^3>$\\
+$\overrightarrow{r}_2(t)=<1+2s,1+6s,1+14s>$
+\begin{enumerate}
+    \item Do the particles collide?
+    \item Do their paths intersect?
+\end{enumerate}
+$t=1+2s,~~t^2=1+6s,~~t^3=1+14s\Rightarrow$\\
+$(1+2s)^2=1+6s\Rightarrow1+4s+4s^2=1+6s\Rightarrow$\\
+$s(4s-2)=0\Rightarrow s=0,s=1/2\Rightarrow$\\
+$s=0,t=1\Rightarrow1\overset{?}{=}1$\\
+$s=1/2,t=2\Rightarrow 8\overset{?}{=}8$\\
+the paths intersect two lines, at the point $(1,1,1)~\&~(2,4,8)$\\
+But they do not collide, the paths intersect at different $t,s$\\
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+1,3,5
+\end{problem}
+\chapter{Partial Derivatives}
+\section{Function of several variables}
+\begin{definition}
+A function of two variables is a rule that assigns for each $(x,y)$ in the domain one value $z=f(x,y)$ in the range \\
+$x,y$ are called independent variables\\
+$z$ is called an independent variable
+\end{definition} 
+\begin{example}
+Find the domain of the following function 
+\begin{enumerate}
+    \item $f(x,y)=\sqrt{y-x+1}$\\
+    $D=\{(x,y):y-x+1\geq 0\}$\\
+    Range:$R=[0,\infty)$
+    \item $f(x,y)=\sqrt{9-x^2-y^2}+\sqrt{x}$\\
+    $D=\{(x,y):9-x^2-y^2\geq 0~\&~x\geq0\}$
+    \item $f(x,y)=ln(x^2+y^2-9)$\\
+    $D=\{(x,y):x^2+y^2-9>0$\\
+    $R=(-\infty,\infty)$
+    \item $f(x,y)=\cfrac{\sin^{-1}(x-y)}{\sqrt{x-y^2}}~~|~~\sin{[-\pi/2,\pi/2]}\to [-1,1]$\\
+    $D=\{(x,y):-1\leq x-y\leq 1 ~\&~>0\}$
+    \begin{enumerate}
+        \item $-1\leq x-y$
+        \item $x-y\leq 1$
+        \item $x-y^2>0$
+    \end{enumerate}
+\end{enumerate}
+\end{example}

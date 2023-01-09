@@ -1,0 +1,120 @@
+\begin{enumerate}
+    \item[5.] $\lim_{(x,y) \to (0,0)} \cfrac{x y^{2}}{x^{2} + y^{4}}$\\
+path $y = mx \rightarrow \lim_{x \to 0} \cfrac{x m^{2} x^{2}}{x^{2} + m^{4} x^{4}}$\\
+$= \lim_{x\to 0} \cfrac{x^{3}}{x^{2}} \cfrac{m^{2}}{1+m^{4}x^{2}}$\\
+$=\lim_{x\to 0}\cfrac{x^{3}}{x^{2}}\cfrac{m^{2}}{1+m^{4} x^{2}}$\\
+              $  \rightarrow 0      \rightarrow m  $\\
+              $=0$\\
+ path $x = my^{2}$ \\
+$\lim \cfrac{xy^{2}}{x^{2} + y^{2}} = \lim_{y \to 0} \cfrac{m y^{2} y^{2}}{m^{2} y^{4} + y^{4}} = \cfrac{m}{m^{2} +1}$ depends on m D.N.E
+\item[6.] $\lim_{(x,y)\to(0,0)} \cfrac{sin(x^{2}+ y^{2})}{x^{2}+y^{2}}$\\
+$r = \surd x^{2} + y^{2}$\\
+$g= tan ^{-1} y      (x,y) \rightarrow 0 $\\
+                      $r \rightarrow 0^{+}    g \rightarrow ?? $\\
+ $= \lim_{r\to 0^{+}} \cfrac{sin r{2}}{{2}} = 1$
+ \item[7.]$\lim_{(x,y) \to (0,0)} \cfrac{1-e^{\surd x^{2} +y^{2}}}{\surd x^{2} + y^{2}} = \lim_{r\to 0^{+}} \cfrac{1-e^{r}}{r} = \lim_{r\to 0^{+}} \cfrac{-e^{r}}{1} = -1 $
+ \item[8.]$\lim_{(x,y)\to(0,0)} \cfrac{x^{3}-y^{3}}{x^{2} + y^{2}} = \lim_{r\to 0^{+}} \cfrac{r^{3} cos ^{3}\Theta - r^{3}sin{3}\Theta }{r^{2}}$\\
+$=\lim_{r\to 0^{+}} r (cos^{3}\theta - sin^{3} \theta) = 0$
+\item[9.]$\lim_{(x,y)\to (0,0)} \cfrac{xy}{x^{2} + y^{2}} = \lim_{r\to 0^{+}} \cfrac{r cos\theta r sin\theta }{r^{2}} = cos\theta sin\theta$ depends on $\theta$ dose not exist
+\item[10.]$\lim_{(x,y) \to (0,0)} \cfrac{xy}{\surd x^{2} + y^{2}} = \lim_{r\to 0^{+}} \cfrac{r cos\theta r sin\theta}{r} = 0 $
+\item[11.]$\lim_{(x,y) \to (0,0)} \cfrac{x^{2} + y^{2}}{x^{2} + y^{2}} = \lim\cfrac{r^{3} cos^{3}\theta + r^{3} sin^{3}\theta}{r^{2}(cos^{2}\theta-sin^{2}\theta}$\\
+$=\lim_{r\to 0^{+}} r (\cfrac{cos^{3}\theta + sin^{3}\theta}{cos^{2}\theta - sin^{2}\theta}$ D.N.E / if $\theta = \cfrac{\pi}{y}$\\
+continuity $z=f(x,y) is cont at (x_\cdot , y_\cdot)$ \\
+if $\lim_{(x,y) \to (x_\cdot,y_\cdot)} f(x,y) = f(x_\cdot,y_\cdot)$
+\end{enumerate}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+find where the function 
+$f(x,y) : \left\{ \begin{array}{cl}
+\cfrac{x^{2} - y^{2}}{x^{2}+y^{2}} & :  (x,y) \neq (0,0) \\
+0 & :  (x,y)=(0,0)\\
+\end{array} \right.$, is cont\\ 
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution}\\
+$f$ is cont for $(x,y)\neq(0,0) at (0,0) ?$\\
+\begin{itemize}
+    \item $f(0,0) = 0$
+    \item $\lim_{(x,y)\to(0,0)} \cfrac{x^{2}-y^{2}}{x^{2}+y^{2}}$ D.N.E $\rightarrow $ f is not cont at (0,0)
+\end{itemize}
+$f$ is cont $R^{2} \ {(0,0)}$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{problem}
+6,7,9,11,13,15,19,20,21,23,25,29,41,61,63
+\end{problem}
+\section{Partial Derivatives}
+\begin{definition}
+if $z=f(x,y)$\\
+$\cfrac{\partial z}{\partial x}=\cfrac{\partial f}{\partial x}= f_x = \lim_{h\to 0} \cfrac{f(x+h,y)-f(x,y)}{h}$\\
+$\cfrac{\partial z}{\partial y}=\cfrac{\partial f}{\partial y}= f_y = \lim_{h\to 0} \cfrac{f(x,y+h)-f(x,y)}{h}$
+\end{definition}
+
+{\color{smalt(darkpowderblue)}Rules:}
+\begin{enumerate}
+\item to find $f_x$ treat y as a constant.
+\item to find $f_y$ treat x as a constant.
+\end{enumerate}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+
+\begin{example}
+find $f_x , f_y$:
+\begin{enumerate}
+    \item $f(x,y) = x+y+xy $\\
+$f_x = 1+0+y = 1+y $\\
+$f_y = 1+x$
+\item  $f(x,y) = \cfrac{x}{y}$\\
+$f_x = \cfrac{1}{y}$\\
+$f_y = x (\cfrac{-1}{y^{2}}$\\
+3) $f(x,y) x e^{xy}$\\
+$f_x = e^{xy} + xye^{xy}$\\
+$f_y = x^{2}e^{xy}$\\
+$f(x,y) = \cfrac{2}{x} -x\ln y$\\
+$f_x = \cfrac{-2}{x^{2}} -\ln y$\\
+$f_y = 0-\cfrac{x}{y}$
+\end{enumerate}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+Function of three variables: \\
+$w = f(x,y,z)$ to find \\
+$f_x$ treat y,z as constant . \\
+$f_y$ treat x,z as constant . \\
+$f_z$ treat x,y as constant . \\
+\begin{example}
+if $f(x,y,z) = xy +\cfrac{1}{z} - e^{xz}$\\
+find $f_x = y+0+-z e^{xz}$\\
+$f_y = x$\\
+$f_z = 0+\cfrac{-1}{z^{2}} - xe^{xz}$
+\end{example}
+Higher Derivatives:
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $f(x,y) = x^{2} y + xy - 2ye^{x}$\\
+find $f_{xx} , f_{xy} , f_{yy} $\\
+$f_x = 2xy + y- 2ye^{x}$\\
+$f_y = x^{2} + x- 2e^{x}$\\
+$f_{xx} = 2y - 2ye^{x}$\\
+$f_{xy} = 2x + 1 - 2e^{x}$\\
+$f_{yx} = 2x+1-2e^{x} $\\
+$f_{yy} = 0$\\
+clairaut’s theorem : if f defined on a disc D that contains (a,b)
+ if $f_{xy} , f_{yx} $ cont on D then $f_{xy}(a,b) = f_{yx}(a,b)$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+
+ \begin{example}
+ T/F : there exists a function s.t 
+ $f_x = 21x + 3y $\\
+ $f_y = x^{2} - 2y$\\
+ \underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution:} note that 
+ $f_{xy} = 3   f_{yx} = 2x $\\
+ $f_{xy} \neq f_{yx} $ false .
+ \end{example}
+ \noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+
+\begin{example}
+if $f(x,y,z) = z^{2} cos(x+2y) $ find $f_{zxyz}$\\
+\underline{\textbf{\large}\color{smalt(darkpowderblue)}Solution}
+$f_z = 2z cos(x+2y)$\\
+ $f_{zx} = -2z sin (x+2y)$\\
+ $f_{zxy} = -4z cos(x+2y)$\\
+ $f_{zxyz} = -ycos(x+2y)$
+ \end{example}

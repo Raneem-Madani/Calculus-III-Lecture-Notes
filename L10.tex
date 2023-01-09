@@ -1,0 +1,98 @@
+$\vv{a} =<a_1,a_2,a_3>\Rightarrow\\$
+$ \vv{a} . \vv{b} = a_1b_1 + a_2b_2 + a_3b_3$ \\
+$\vv{b} =<b_1 , b_2 , b_2>$ \hspace{1.1cm} $\vv{a} . \vv{b} = |\vv{a}| . |\vv{b}| \; \; cos\theta$
+\hspace*{3.5cm} $\vv{a} . \vv{b} = 0 \leftrightarrow  \vv{a} \bot \vv{b}$
+\begin{itemize}
+\item  $-|a||b| \leq \vv{a} . \vv{b} \leq |a| |b|$\\
+\hspace*{1.4cm} $| \vv{a} . \vv{b}| \leq |a| |b|$
+\end{itemize}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $|\vv{a}| = 2$ , $|\vv{b}| = 3$ , $\theta = \dfrac{2}{3} \pi$. Find $|\vv{a} - 2 \vv{b}|$. 
+$|\vv{u}|^2 = \vv{u} . \vv{u}$ \hspace{3cm}
+$|\vv{a} - 2 \vv{b}|^2$  = $(\vv{a} - 2 \vv{b}) . (\vv{a} -2 \vv{b})$\\
+\hspace*{7.1cm}    = $\vv{a} . \vv{a} - 2 \vv{a}
+\vv{b} - 2 \vv{b} . \vv{a} + 4 \vv{b} . \vv{b}$\\
+\hspace*{7.1cm}           = $|\vv{a}|^2 - 4 |\vv{a}| |\vv{b}| cos\theta + 4|\vv{b}|^2$\\
+\hspace*{7.1cm}            = $4 - 4 . 2 .3 \left(\dfrac{-1}{2}\right) + 4.9$\\
+\hspace*{7.1cm}           = $16 + 36 = 52$ 
+$|\vv{a} - 2\vv{b}| = \sqrt{52}$\\
+$\boxed{|\vv{a} + \vv{b}| = \sqrt{|a|^2 + |b|^2 -2 \; |a| \; |b| \; cos\theta}}$
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+Prove that $|\vv{a}  + \vv{b}| \leq |\vv{a}| + |\vv{b}| $.\\
+\hspace*{1cm} \emph{Pf:}\\
+$|\vv{a} + \vv{b}|^2 = (\vv{a} + \vv{b}) . (\vv{a} . \vv{b})$\\
+\hspace*{1.35cm} = $|\vv{a}|^2 + |\vv{b}|^2 + 2 \; \vv{a} . \vv{b} \leq |\vv{a}|^2 + |\vv{b}|^2 + 2 \; |a| \; |b|$\\
+\hspace*{4.95cm} = $\underbrace{(|a| + |b| )^2}$\\
+$\Rightarrow \; |\vv{a} + \vv{b}| \; \leq \; |\vv{a}| \; + \; |\vv{b}|$
+
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{paracol}{2}
+Direction Angles.\\
+is the angle b/w $\vv{v}$ \& the  $x - axis$ 
+$\beta$ \\
+$\gamma$\\
+\switchcolumn
+Direction Cosines.
+$cos \alpha = \dfrac{a_1}{|\vv{v}|}$
+$cos \beta = \dfrac{a_2}{|\vv{v}|}$
+$cos\gamma = \dfrac{a_3}{|\vv{v}|}$
+\end{paracol}
+
+$a_1 = cos \alpha |\vv{v}|$ , $a_2 = cos \beta |\vv{v}|$, $a_3 = cos \gamma |\vv{v}|$ \\
+$\vv{v} = |\vv{v}| <cos\alpha,cos\beta,<\gamma> $\\
+$\dfrac{\vv{v}}{|\vv{v}|} = <cos \alpha , cos \beta , cos \gamma>$ 
+
+$\Rightarrow cos^2 \alpha + cos^2 \beta + cos^2 \gamma = `1$\\
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+can $\alpha = \cfrac{\pi}{4}$ , $\beta = \cfrac{\pi}{4}$ , $\gamma = \cfrac{\pi}{4}$ be direction cosines.
+Answer. No, because \\
+$cos^2 \cfrac{\pi}{4} + cos^2 \cfrac{\pi}{4} + cos^2 \cfrac{\pi}{4} = \cfrac{3}{2} \not= 1$
+\end{example}
+\begin{exercise}
+if $\vv{a} = <1 , 2, 3>$ Find direction angles.
+\end{exercise}
+\large{Projections}
+\begin{itemize}
+\item Scalar Projection: \\
+\begin{paracol}{3}
+${comp}_{\vv{a}}^{\vv{b}} = \dfrac{\vv{a} . \vv{b}}{|\vv{a}|^2}$ 
+\switchcolumn
+
+$\dfrac{|\vv{a}| \; |\vv{b}| \; cos\theta}{|\vv{a}|} = \mathcal{L}$\\
+$\dfrac{\vv{a} . \vv{b}}{\vv{a}}$ = 
+
+\switchcolumn
+
+$\vv{v} = \mathcal{L} \; \dfrac{\vv{a}}{|\vv{a}|}$ \\
+\hspace*{0.5cm} $= \dfrac{\vv{a} . \vv{a}}{|\vv{a}|^2} \; \vv{a} $
+\end{paracol}
+\item Vector Projection:\\
+${Proj}_{\vv{a}}^{\vv{b}} = \dfrac{\vv{a} . \vv{b}}{|\vv{a}|^2} \; \vv{a}$
+\end{itemize}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if $\vv{a} = <2,1,-1>$  \\
+\hspace*{5cm} Find\\
+\hspace*{1.6cm} $\vv{b} =<2,-1,2>$\\
+\begin{enumerate}
+\item ${comp}_{\vv{b}}^{\vv{a}} \; = \; \dfrac{\vv{a} . \vv{b}}{|\vv{b}|} \; = \; \cfrac{4 - 1 - 2}{3} \; = \; \cfrac{1}{3}$
+\item ${Proj}_{\vv{b}}^{\vv{a}} \; = \; \dfrac{\vv{a} . \vv{b}}{|\vv{b}|^2} \; \vv{b} \; = \; \cfrac{1}{9} \;<2,-1,2>$
+\end{enumerate}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
+\begin{example}
+if ${Proj}_{\vv{b}}^{\vv{a}} \; = \;<2 , 1 , -2>$ , $\underbrace{\theta}_{\text{angle \; b/w} \; \vv{a} \; \& \;  \vv{b}}$ = $\cfrac{8}{15} \; \pi$\\
+Find:
+\begin{enumerate}
+\item ${Proj}_{\vv{b}}^{2\vv{a}} \; = \; 2 \dfrac{\vv{a} . \vv{b}}{|\vv{b}|^2} \; \vv{b} \; = \; 2<2,1,-2> \; = \;<4 , 2 , -4>$
+\item ${Proj}_{\vv{2b}}^{\vv{a}} \; = \; \dfrac{\vv{a} . 2\vv{b}}{4 |\vv{b}}| \; 2\vv{b} \; = \;<2,1,-2>$\\
+\item ${Proj}_{-2\vv{b}}^{\vv{a}} \; = \; \dfrac{\vv{a} . (-2\vv{b})}{4 \; |\vv{b}|} \; (-2\vv{b}) \; = \; \dfrac{\vv{a} . \vv{b}}{|\vv{b}|^2} \; \vv{b} \; = \;<2 , 1 , -2>$\\
+\item ${comp}_{\vv{b}}^{\vv{a}} \; = \; -3$
+\end{enumerate}
+\end{example}
+\noindent{\color{smalt(darkpowderblue)}\rule{\linewidth}{.2mm}}
